@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app will use your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app will use your location</string>
+	<key>NSLocationUsageDescription</key>
+	<string>This app will use your Location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app will use your Location</string>
 	<key>NSCameraUsageDescription</key>
 	<string>This app will use your Camera to scan QRCode</string>
 	<key>NSFaceIDUsageDescription</key>
