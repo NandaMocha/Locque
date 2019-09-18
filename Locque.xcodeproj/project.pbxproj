@@ -3,29 +3,92 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0401FE60232F9BF100236392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE5F232F9BF100236392 /* AppDelegate.swift */; };
-		0401FE62232F9BF100236392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE61232F9BF100236392 /* ViewController.swift */; };
+		0401FE62232F9BF100236392 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE61232F9BF100236392 /* SignInVC.swift */; };
 		0401FE65232F9BF100236392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE63232F9BF100236392 /* Main.storyboard */; };
 		0401FE67232F9BF200236392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE66232F9BF200236392 /* Assets.xcassets */; };
 		0401FE6A232F9BF200236392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE68232F9BF200236392 /* LaunchScreen.storyboard */; };
+		0401FE7223309A4A00236392 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE7123309A4A00236392 /* DataManager.swift */; };
+		0401FE772330A1C400236392 /* EnterPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE762330A1C400236392 /* EnterPINVC.swift */; };
+		0401FE792330A93000236392 /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE782330A93000236392 /* MainPageVC.swift */; };
+		0401FE7B2330B08900236392 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0401FE7A2330B08900236392 /* GoogleService-Info.plist */; };
+		0401FE852330C26000236392 /* LocqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE842330C26000236392 /* LocqueTests.swift */; };
+		0401FE932330C26800236392 /* LocqueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FE922330C26800236392 /* LocqueUITests.swift */; };
+		0401FEBC2331558800236392 /* SetPINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEBB2331558800236392 /* SetPINVC.swift */; };
+		0401FEBE2331616500236392 /* GetLockerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEBD2331616500236392 /* GetLockerVC.swift */; };
+		0401FEC02331617E00236392 /* FreeLockerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEBF2331617E00236392 /* FreeLockerVC.swift */; };
+		0401FEC22331619E00236392 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEC12331619E00236392 /* SettingsVC.swift */; };
+		0401FEC42331627800236392 /* LockerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEC32331627800236392 /* LockerData.swift */; };
+		4AA1E619D9B52DCE1A3E2705 /* Pods_Locque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0401FE872330C26000236392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0401FE54232F9BF100236392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0401FE5B232F9BF100236392;
+			remoteInfo = Locque;
+		};
+		0401FE952330C26800236392 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0401FE54232F9BF100236392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0401FE5B232F9BF100236392;
+			remoteInfo = Locque;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0401FE5C232F9BF100236392 /* Locque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locque.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0401FE5F232F9BF100236392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0401FE61232F9BF100236392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0401FE61232F9BF100236392 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		0401FE64232F9BF100236392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0401FE66232F9BF200236392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0401FE69232F9BF200236392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0401FE6B232F9BF200236392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0401FE7123309A4A00236392 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0401FE762330A1C400236392 /* EnterPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPINVC.swift; sourceTree = "<group>"; };
+		0401FE782330A93000236392 /* MainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
+		0401FE7A2330B08900236392 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0401FE822330C26000236392 /* LocqueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocqueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE842330C26000236392 /* LocqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocqueTests.swift; sourceTree = "<group>"; };
+		0401FE862330C26000236392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0401FE902330C26800236392 /* LocqueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocqueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE922330C26800236392 /* LocqueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocqueUITests.swift; sourceTree = "<group>"; };
+		0401FE942330C26800236392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0401FE9A2330EE2900236392 /* Locque.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Locque.entitlements; sourceTree = "<group>"; };
+		0401FEBB2331558800236392 /* SetPINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPINVC.swift; sourceTree = "<group>"; };
+		0401FEBD2331616500236392 /* GetLockerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLockerVC.swift; sourceTree = "<group>"; };
+		0401FEBF2331617E00236392 /* FreeLockerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeLockerVC.swift; sourceTree = "<group>"; };
+		0401FEC12331619E00236392 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		0401FEC32331627800236392 /* LockerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerData.swift; sourceTree = "<group>"; };
+		BEA510BAAA3885C205B9D2C1 /* Pods-Locque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.debug.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.debug.xcconfig"; sourceTree = "<group>"; };
+		C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7C08048DA162ED496A5727 /* Pods-Locque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.release.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0401FE59232F9BF100236392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA1E619D9B52DCE1A3E2705 /* Pods_Locque.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE7F2330C26000236392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE8D2330C26800236392 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				0401FE5E232F9BF100236392 /* Locque */,
+				0401FE832330C26000236392 /* LocqueTests */,
+				0401FE912330C26800236392 /* LocqueUITests */,
 				0401FE5D232F9BF100236392 /* Products */,
+				C80E05924AAA9D1AAFF53629 /* Pods */,
+				75EBD0FFF20724C31E2F960E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				0401FE5C232F9BF100236392 /* Locque.app */,
+				0401FE822330C26000236392 /* LocqueTests.xctest */,
+				0401FE902330C26800236392 /* LocqueUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +123,83 @@
 		0401FE5E232F9BF100236392 /* Locque */ = {
 			isa = PBXGroup;
 			children = (
+				0401FE9A2330EE2900236392 /* Locque.entitlements */,
 				0401FE5F232F9BF100236392 /* AppDelegate.swift */,
-				0401FE61232F9BF100236392 /* ViewController.swift */,
-				0401FE63232F9BF100236392 /* Main.storyboard */,
+				0401FE7523309A7300236392 /* Model */,
+				0401FE7423309A6F00236392 /* View */,
+				0401FE7323309A6900236392 /* Controller */,
 				0401FE66232F9BF200236392 /* Assets.xcassets */,
 				0401FE68232F9BF200236392 /* LaunchScreen.storyboard */,
+				0401FE7A2330B08900236392 /* GoogleService-Info.plist */,
 				0401FE6B232F9BF200236392 /* Info.plist */,
 			);
 			path = Locque;
+			sourceTree = "<group>";
+		};
+		0401FE7323309A6900236392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE61232F9BF100236392 /* SignInVC.swift */,
+				0401FEBB2331558800236392 /* SetPINVC.swift */,
+				0401FE762330A1C400236392 /* EnterPINVC.swift */,
+				0401FE782330A93000236392 /* MainPageVC.swift */,
+				0401FEBD2331616500236392 /* GetLockerVC.swift */,
+				0401FEBF2331617E00236392 /* FreeLockerVC.swift */,
+				0401FEC12331619E00236392 /* SettingsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0401FE7423309A6F00236392 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE63232F9BF100236392 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0401FE7523309A7300236392 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE7123309A4A00236392 /* DataManager.swift */,
+				0401FEC32331627800236392 /* LockerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0401FE832330C26000236392 /* LocqueTests */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE842330C26000236392 /* LocqueTests.swift */,
+				0401FE862330C26000236392 /* Info.plist */,
+			);
+			path = LocqueTests;
+			sourceTree = "<group>";
+		};
+		0401FE912330C26800236392 /* LocqueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0401FE922330C26800236392 /* LocqueUITests.swift */,
+				0401FE942330C26800236392 /* Info.plist */,
+			);
+			path = LocqueUITests;
+			sourceTree = "<group>";
+		};
+		75EBD0FFF20724C31E2F960E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C80E05924AAA9D1AAFF53629 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA510BAAA3885C205B9D2C1 /* Pods-Locque.debug.xcconfig */,
+				DD7C08048DA162ED496A5727 /* Pods-Locque.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0401FE6E232F9BF200236392 /* Build configuration list for PBXNativeTarget "Locque" */;
 			buildPhases = (
+				968605FC451723C9C2F21BEC /* [CP] Check Pods Manifest.lock */,
 				0401FE58232F9BF100236392 /* Sources */,
 				0401FE59232F9BF100236392 /* Frameworks */,
 				0401FE5A232F9BF100236392 /* Resources */,
+				9005448218C8758B8823BF55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -83,6 +223,42 @@
 			productName = Locque;
 			productReference = 0401FE5C232F9BF100236392 /* Locque.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0401FE812330C26000236392 /* LocqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0401FE892330C26000236392 /* Build configuration list for PBXNativeTarget "LocqueTests" */;
+			buildPhases = (
+				0401FE7E2330C26000236392 /* Sources */,
+				0401FE7F2330C26000236392 /* Frameworks */,
+				0401FE802330C26000236392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0401FE882330C26000236392 /* PBXTargetDependency */,
+			);
+			name = LocqueTests;
+			productName = LocqueTests;
+			productReference = 0401FE822330C26000236392 /* LocqueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0401FE8F2330C26800236392 /* LocqueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0401FE972330C26800236392 /* Build configuration list for PBXNativeTarget "LocqueUITests" */;
+			buildPhases = (
+				0401FE8C2330C26800236392 /* Sources */,
+				0401FE8D2330C26800236392 /* Frameworks */,
+				0401FE8E2330C26800236392 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0401FE962330C26800236392 /* PBXTargetDependency */,
+			);
+			name = LocqueUITests;
+			productName = LocqueUITests;
+			productReference = 0401FE902330C26800236392 /* LocqueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +272,19 @@
 				TargetAttributes = {
 					0401FE5B232F9BF100236392 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
+					};
+					0401FE812330C26000236392 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 0401FE5B232F9BF100236392;
+					};
+					0401FE8F2330C26800236392 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 0401FE5B232F9BF100236392;
 					};
 				};
 			};
@@ -113,6 +302,8 @@
 			projectRoot = "";
 			targets = (
 				0401FE5B232F9BF100236392 /* Locque */,
+				0401FE812330C26000236392 /* LocqueTests */,
+				0401FE8F2330C26800236392 /* LocqueUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -123,24 +314,118 @@
 			buildActionMask = 2147483647;
 			files = (
 				0401FE6A232F9BF200236392 /* LaunchScreen.storyboard in Resources */,
+				0401FE7B2330B08900236392 /* GoogleService-Info.plist in Resources */,
 				0401FE67232F9BF200236392 /* Assets.xcassets in Resources */,
 				0401FE65232F9BF100236392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0401FE802330C26000236392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE8E2330C26800236392 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9005448218C8758B8823BF55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Locque/Pods-Locque-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Locque/Pods-Locque-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Locque/Pods-Locque-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		968605FC451723C9C2F21BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Locque-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0401FE58232F9BF100236392 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0401FE62232F9BF100236392 /* ViewController.swift in Sources */,
+				0401FEC02331617E00236392 /* FreeLockerVC.swift in Sources */,
+				0401FEBE2331616500236392 /* GetLockerVC.swift in Sources */,
+				0401FE62232F9BF100236392 /* SignInVC.swift in Sources */,
+				0401FEC42331627800236392 /* LockerData.swift in Sources */,
+				0401FE792330A93000236392 /* MainPageVC.swift in Sources */,
+				0401FE772330A1C400236392 /* EnterPINVC.swift in Sources */,
+				0401FE7223309A4A00236392 /* DataManager.swift in Sources */,
 				0401FE60232F9BF100236392 /* AppDelegate.swift in Sources */,
+				0401FEBC2331558800236392 /* SetPINVC.swift in Sources */,
+				0401FEC22331619E00236392 /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE7E2330C26000236392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE852330C26000236392 /* LocqueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0401FE8C2330C26800236392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0401FE932330C26800236392 /* LocqueUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0401FE882330C26000236392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0401FE5B232F9BF100236392 /* Locque */;
+			targetProxy = 0401FE872330C26000236392 /* PBXContainerItemProxy */;
+		};
+		0401FE962330C26800236392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0401FE5B232F9BF100236392 /* Locque */;
+			targetProxy = 0401FE952330C26800236392 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0401FE63232F9BF100236392 /* Main.storyboard */ = {
@@ -280,8 +565,10 @@
 		};
 		0401FE6F232F9BF200236392 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA510BAAA3885C205B9D2C1 /* Pods-Locque.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Locque/Locque.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = Locque/Info.plist;
@@ -298,8 +585,10 @@
 		};
 		0401FE70232F9BF200236392 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7C08048DA162ED496A5727 /* Pods-Locque.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Locque/Locque.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NAU7R3577;
 				INFOPLIST_FILE = Locque/Info.plist;
@@ -311,6 +600,84 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0401FE8A2330C26000236392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = LocqueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.LocqueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locque.app/Locque";
+			};
+			name = Debug;
+		};
+		0401FE8B2330C26000236392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = LocqueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.LocqueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Locque.app/Locque";
+			};
+			name = Release;
+		};
+		0401FE982330C26800236392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = LocqueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.LocqueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Locque;
+			};
+			name = Debug;
+		};
+		0401FE992330C26800236392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NAU7R3577;
+				INFOPLIST_FILE = LocqueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.LocqueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Locque;
 			};
 			name = Release;
 		};
@@ -331,6 +698,24 @@
 			buildConfigurations = (
 				0401FE6F232F9BF200236392 /* Debug */,
 				0401FE70232F9BF200236392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0401FE892330C26000236392 /* Build configuration list for PBXNativeTarget "LocqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE8A2330C26000236392 /* Debug */,
+				0401FE8B2330C26000236392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0401FE972330C26800236392 /* Build configuration list for PBXNativeTarget "LocqueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401FE982330C26800236392 /* Debug */,
+				0401FE992330C26800236392 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
