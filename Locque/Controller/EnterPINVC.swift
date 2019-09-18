@@ -29,15 +29,19 @@ class EnterPINVC: UIViewController {
     }
     
     func checkBiometric() {
+        
         Authenticate { (success) in
             print("Success")
             if success != false{
                 
                 DispatchQueue.main.async {
                     self.textfieldPIN.text = self.shared.PINUser
-                    if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageVC") as? MainPageVC {
-                        self.present(viewController, animated: true)
-                    }
+//                    if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainPageVC") as? MainPageVC {
+                        self.performSegue(withIdentifier: "goToMainPage", sender: self)
+//                        self.window?.rootViewController = initialViewController
+//                        self.window?.makeKeyAndVisible()
+                        
+//                    }
                 }
             }
         }
@@ -102,15 +106,6 @@ class EnterPINVC: UIViewController {
             
         case LAError.Code.passcodeNotSet.rawValue:
             strMessage = "Please goto the Settings & Turn On Passcode"
-            
-        case LAError.Code.touchIDNotAvailable.rawValue:
-            strMessage = "TouchI or FaceID DNot Available"
-            
-        case LAError.Code.touchIDNotEnrolled.rawValue:
-            strMessage = "TouchID or FaceID Not Enrolled"
-            
-        case LAError.Code.touchIDLockout.rawValue:
-            strMessage = "TouchID or FaceID Lockout Please goto the Settings & Turn On Passcode"
             
         case LAError.Code.appCancel.rawValue:
             strMessage = "App Cancel"

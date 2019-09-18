@@ -30,13 +30,15 @@ class SetPINVC: UIViewController, UITextFieldDelegate {
             shared.PINUser = pin
             shared.saveDataUserToUserDefaults()
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageVC")
-            self.present(initialViewController, animated: true)
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainPageVC")
+//            self.present(initialViewController, animated: true)
+            
+            performSegue(withIdentifier: "goToMainPageVC", sender: self)
             
             print("move to enter pin")
         }else{
-            shared.setAlert(title: "Sorry", message: "Please check your PIN", sender: self)
+            shared.setAlert(title: "Sorry", message: "Please check your PIN", sender: self) { (done) in}
         }
     }
 

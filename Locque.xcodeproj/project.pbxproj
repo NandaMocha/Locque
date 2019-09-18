@@ -23,6 +23,10 @@
 		0401FEC02331617E00236392 /* FreeLockerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEBF2331617E00236392 /* FreeLockerVC.swift */; };
 		0401FEC22331619E00236392 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEC12331619E00236392 /* SettingsVC.swift */; };
 		0401FEC42331627800236392 /* LockerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEC32331627800236392 /* LockerData.swift */; };
+		0401FEC82331E0F700236392 /* CellLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FEC72331E0F700236392 /* CellLocker.swift */; };
+		0401FECC2331F6F800236392 /* LockerJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 0401FECB2331F6F800236392 /* LockerJSON.json */; };
+		0401FECE2332105200236392 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FECD2332105200236392 /* ScannerVC.swift */; };
+		0401FED023321C7C00236392 /* ResultScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FECF23321C7C00236392 /* ResultScannerVC.swift */; };
 		4AA1E619D9B52DCE1A3E2705 /* Pods_Locque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,10 @@
 		0401FEBF2331617E00236392 /* FreeLockerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeLockerVC.swift; sourceTree = "<group>"; };
 		0401FEC12331619E00236392 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		0401FEC32331627800236392 /* LockerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerData.swift; sourceTree = "<group>"; };
+		0401FEC72331E0F700236392 /* CellLocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLocker.swift; sourceTree = "<group>"; };
+		0401FECB2331F6F800236392 /* LockerJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LockerJSON.json; sourceTree = "<group>"; };
+		0401FECD2332105200236392 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		0401FECF23321C7C00236392 /* ResultScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScannerVC.swift; sourceTree = "<group>"; };
 		BEA510BAAA3885C205B9D2C1 /* Pods-Locque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.debug.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.debug.xcconfig"; sourceTree = "<group>"; };
 		C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7C08048DA162ED496A5727 /* Pods-Locque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.release.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 				0401FE66232F9BF200236392 /* Assets.xcassets */,
 				0401FE68232F9BF200236392 /* LaunchScreen.storyboard */,
 				0401FE7A2330B08900236392 /* GoogleService-Info.plist */,
+				0401FECB2331F6F800236392 /* LockerJSON.json */,
 				0401FE6B232F9BF200236392 /* Info.plist */,
 			);
 			path = Locque;
@@ -146,6 +155,8 @@
 				0401FEBD2331616500236392 /* GetLockerVC.swift */,
 				0401FEBF2331617E00236392 /* FreeLockerVC.swift */,
 				0401FEC12331619E00236392 /* SettingsVC.swift */,
+				0401FECD2332105200236392 /* ScannerVC.swift */,
+				0401FECF23321C7C00236392 /* ResultScannerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 			children = (
 				0401FE7123309A4A00236392 /* DataManager.swift */,
 				0401FEC32331627800236392 /* LockerData.swift */,
+				0401FEC72331E0F700236392 /* CellLocker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0401FECC2331F6F800236392 /* LockerJSON.json in Resources */,
 				0401FE6A232F9BF200236392 /* LaunchScreen.storyboard in Resources */,
 				0401FE7B2330B08900236392 /* GoogleService-Info.plist in Resources */,
 				0401FE67232F9BF200236392 /* Assets.xcassets in Resources */,
@@ -383,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0401FEC82331E0F700236392 /* CellLocker.swift in Sources */,
 				0401FEC02331617E00236392 /* FreeLockerVC.swift in Sources */,
 				0401FEBE2331616500236392 /* GetLockerVC.swift in Sources */,
 				0401FE62232F9BF100236392 /* SignInVC.swift in Sources */,
@@ -391,7 +405,9 @@
 				0401FE772330A1C400236392 /* EnterPINVC.swift in Sources */,
 				0401FE7223309A4A00236392 /* DataManager.swift in Sources */,
 				0401FE60232F9BF100236392 /* AppDelegate.swift in Sources */,
+				0401FECE2332105200236392 /* ScannerVC.swift in Sources */,
 				0401FEBC2331558800236392 /* SetPINVC.swift in Sources */,
+				0401FED023321C7C00236392 /* ResultScannerVC.swift in Sources */,
 				0401FEC22331619E00236392 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

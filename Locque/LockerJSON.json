@@ -1,0 +1,144 @@
+{
+    "LockerData" : {
+        "1" : {
+        "lockerType": "A",
+        "lockerNumber": 1,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "2" : {
+        "lockerType": "A",
+        "lockerNumber": 2,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "3" : {
+        "lockerType": "A",
+        "lockerNumber": 3,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "4" : {
+        "lockerType": "A",
+        "lockerNumber": 4,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "5" : {
+        "lockerType": "A",
+        "lockerNumber": 5,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "6" : {
+        "lockerType": "B",
+        "lockerNumber": 1,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "7" : {
+        "lockerType": "B",
+        "lockerNumber": 2,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "8" : {
+        "lockerType": "B",
+        "lockerNumber": 3,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "9" : {
+        "lockerType": "B",
+        "lockerNumber": 4,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "10" : {
+        "lockerType": "B",
+        "lockerNumber": 5,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "11" : {
+        "lockerType": "C",
+        "lockerNumber": 1,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "12" : {
+        "lockerType": "C",
+        "lockerNumber": 2,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "13" : {
+        "lockerType": "C",
+        "lockerNumber": 3,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "14" : {
+        "lockerType": "C",
+        "lockerNumber": 4,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "15" : {
+        "lockerType": "C",
+        "lockerNumber": 5,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "16" : {
+        "lockerType": "D",
+        "lockerNumber": 1,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "17" : {
+        "lockerType": "D",
+        "lockerNumber": 2,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "18" : {
+        "lockerType": "D",
+        "lockerNumber": 3,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "19" : {
+        "lockerType": "D",
+        "lockerNumber": 4,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      },
+        "20" : {
+        "lockerType": "D",
+        "lockerNumber": 5,
+        "lockerOwner": "",
+        "lockerTimer": "",
+        "lockerNotes": ""
+      }
+    }
+}
