@@ -105,6 +105,7 @@ class ResultScannerVC: UIViewController , UITextFieldDelegate{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MM yyyy - HH:mm:ss"//"EE" to get short style
         let timer = dateFormatter.string(from: date).capitalized
+
         
         return "\(timer)"
     }

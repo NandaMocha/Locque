@@ -22,6 +22,10 @@ class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         scanQRCode()
     }
     
+    @IBAction func cancelBTN(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func scanQRCode() {
         view.backgroundColor = UIColor.black
         captureSession = AVCaptureSession()
@@ -56,7 +60,8 @@ class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = view.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
-        view.layer.addSublayer(previewLayer)
+//        view.layer.addSublayer(previewLayer)
+        view.layer.insertSublayer(previewLayer, at: 0)
         
         captureSession.startRunning()
     }

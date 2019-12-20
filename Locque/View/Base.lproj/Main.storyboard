@@ -225,6 +225,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="actionLocker" destination="pcy-LL-hk1" id="44g-uO-FER"/>
+                        <outlet property="findLocker" destination="2gy-5F-fSa" id="meR-4C-lWt"/>
                         <outlet property="lockerStatus" destination="EHk-rP-kcq" id="1yw-a5-JCC"/>
                         <outlet property="notesOfLocker" destination="22H-Wa-7hV" id="6Ks-c8-iFs"/>
                         <outlet property="numberLocker" destination="Zxr-tg-ssJ" id="cqg-pX-yBO"/>
@@ -306,7 +307,7 @@
                     </view>
                     <connections>
                         <outlet property="emailUser" destination="Z8s-ET-TFz" id="wm9-Y3-k86"/>
-                        <segue destination="oIL-dQ-8vK" kind="unwind" identifier="unwindToSignIn" unwindAction="unwindToSignInSegue:" id="h51-bb-aRH"/>
+                        <segue destination="oIL-dQ-8vK" kind="unwind" identifier="unwindToSignIn" unwindAction="unwindToSignInSegue:" id="gz3-Wr-x8G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iP4-0J-kUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,6 +349,14 @@
                                     <constraint firstItem="faj-Jq-q27" firstAttribute="top" secondItem="fIU-g5-hWf" secondAttribute="bottom" constant="20" id="ynj-Aq-KcH"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvN-4O-imi">
+                                <rect key="frame" x="19" y="66" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelBTN:" destination="rgK-IT-OKs" eventType="touchUpInside" id="IWN-qV-kat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -742,7 +751,6 @@
                                 <rect key="frame" x="181.5" y="483" width="51" height="30"/>
                                 <state key="normal" title="Set PIN"/>
                                 <connections>
-                                    <action selector="enterBTN:" destination="Cc1-yh-jSR" eventType="touchUpInside" id="DjY-Pq-HRO"/>
                                     <action selector="setPIN:" destination="pXr-ub-FFt" eventType="touchUpInside" id="aSg-YA-6iz"/>
                                 </connections>
                             </button>

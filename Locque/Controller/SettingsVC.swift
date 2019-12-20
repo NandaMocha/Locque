@@ -39,6 +39,6 @@ class SettingsVC: UIViewController {
         shared.saveDataUserToUserDefaults()
         
         performSegue(withIdentifier: "unwindToSignIn", sender: self)
-        
+        print("Go To sign in")
     }
 }

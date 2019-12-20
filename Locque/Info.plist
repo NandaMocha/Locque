@@ -2,22 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app will use your location</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This app will use your location</string>
-	<key>NSLocationUsageDescription</key>
-	<string>This app will use your Location</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This app will use your Location</string>
-	<key>NSCameraUsageDescription</key>
-	<string>This app will use your Camera to scan QRCode</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>This app will use your Face ID</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Locquee</string>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -47,6 +35,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This app will use your Camera to scan QRCode</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>This app will use your Face ID</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app will use your Location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This app will use your location</string>
+	<key>NSLocationUsageDescription</key>
+	<string>This app will use your Location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app will use your location</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

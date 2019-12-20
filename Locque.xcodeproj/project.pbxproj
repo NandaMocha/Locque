@@ -27,6 +27,7 @@
 		0401FECC2331F6F800236392 /* LockerJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 0401FECB2331F6F800236392 /* LockerJSON.json */; };
 		0401FECE2332105200236392 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FECD2332105200236392 /* ScannerVC.swift */; };
 		0401FED023321C7C00236392 /* ResultScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401FECF23321C7C00236392 /* ResultScannerVC.swift */; };
+		04C538A023348FD9000ABADC /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5389F23348FD9000ABADC /* extension.swift */; };
 		4AA1E619D9B52DCE1A3E2705 /* Pods_Locque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0401FE5C232F9BF100236392 /* Locque.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locque.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0401FE5C232F9BF100236392 /* Doolan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doolan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0401FE5F232F9BF100236392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0401FE61232F9BF100236392 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		0401FE64232F9BF100236392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		0401FECB2331F6F800236392 /* LockerJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LockerJSON.json; sourceTree = "<group>"; };
 		0401FECD2332105200236392 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		0401FECF23321C7C00236392 /* ResultScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScannerVC.swift; sourceTree = "<group>"; };
+		04C5389F23348FD9000ABADC /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		BEA510BAAA3885C205B9D2C1 /* Pods-Locque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.debug.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.debug.xcconfig"; sourceTree = "<group>"; };
 		C768156DBBE08B92CF8805A9 /* Pods_Locque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Locque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7C08048DA162ED496A5727 /* Pods-Locque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Locque.release.xcconfig"; path = "Target Support Files/Pods-Locque/Pods-Locque.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +123,7 @@
 		0401FE5D232F9BF100236392 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0401FE5C232F9BF100236392 /* Locque.app */,
+				0401FE5C232F9BF100236392 /* Doolan.app */,
 				0401FE822330C26000236392 /* LocqueTests.xctest */,
 				0401FE902330C26800236392 /* LocqueUITests.xctest */,
 			);
@@ -136,9 +138,9 @@
 				0401FE7523309A7300236392 /* Model */,
 				0401FE7423309A6F00236392 /* View */,
 				0401FE7323309A6900236392 /* Controller */,
-				0401FE66232F9BF200236392 /* Assets.xcassets */,
 				0401FE68232F9BF200236392 /* LaunchScreen.storyboard */,
 				0401FE7A2330B08900236392 /* GoogleService-Info.plist */,
+				0401FE66232F9BF200236392 /* Assets.xcassets */,
 				0401FECB2331F6F800236392 /* LockerJSON.json */,
 				0401FE6B232F9BF200236392 /* Info.plist */,
 			);
@@ -175,6 +177,7 @@
 				0401FE7123309A4A00236392 /* DataManager.swift */,
 				0401FEC32331627800236392 /* LockerData.swift */,
 				0401FEC72331E0F700236392 /* CellLocker.swift */,
+				04C5389F23348FD9000ABADC /* extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,7 +236,7 @@
 			);
 			name = Locque;
 			productName = Locque;
-			productReference = 0401FE5C232F9BF100236392 /* Locque.app */;
+			productReference = 0401FE5C232F9BF100236392 /* Doolan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0401FE812330C26000236392 /* LocqueTests */ = {
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0401FEC82331E0F700236392 /* CellLocker.swift in Sources */,
+				04C538A023348FD9000ABADC /* extension.swift in Sources */,
 				0401FEC02331617E00236392 /* FreeLockerVC.swift in Sources */,
 				0401FEBE2331616500236392 /* GetLockerVC.swift in Sources */,
 				0401FE62232F9BF100236392 /* SignInVC.swift in Sources */,
@@ -593,7 +597,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.Locque;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Doolan;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -613,7 +617,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nandamochammad.Locque;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Doolan;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

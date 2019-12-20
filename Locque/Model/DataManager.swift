@@ -91,6 +91,7 @@ class DataManager{
     
     func GetLockerData(completion: @escaping ([LockerData]) -> Void){
         
+        var lockerID = ""
         var lockertype = ""
         var lockernum = ""
         var lockerowner = ""
@@ -105,6 +106,8 @@ class DataManager{
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
                 self.lockerData.removeAll()
                 for snap in snapshot{
+                    print("Snap ID, ", snap.key)
+                    lockerID = String(snap.key)
                     if let data = snap.value as? Dictionary<String, Any>{
                         lockertype = data["lockerType"] as! String
                         lockernum = "\(data["lockerNumber"] as! Int)"
@@ -112,7 +115,7 @@ class DataManager{
                         lockertimer = data["lockerTimer"] as! String
                         lockernotes = data["lockerNotes"] as! String
                         
-                        let dataOfLocker = LockerData.init(lockerType:lockertype, lockerNumber: lockernum, lockerOwner: lockerowner, lockerTimer: lockertimer, lockerNotes: lockernotes)
+                        let dataOfLocker = LockerData.init(lockerID: lockerID, lockerType:lockertype, lockerNumber: lockernum, lockerOwner: lockerowner, lockerTimer: lockertimer, lockerNotes: lockernotes)
                         
                         self.lockerData.append(dataOfLocker)
 
@@ -130,13 +133,15 @@ class DataManager{
         var lockerowner = ""
         var lockertimer = ""
         var lockernotes = ""
+        var lockerID = ""
+
         
         let ref = Database.database().reference(withPath: "LockerData/\(number)")
         print("Cek retrieve specific data")
 
         ref.observe(.value) { (snapshot) in
-            print("DataSnapshot0, ", snapshot)
-
+            print("DataSnapshot ID, ", snapshot.key)
+            lockerID = String(snapshot.key)
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
                 self.dataSpecificLocker.removeAll()
                 print("DataSnapshot1, ", snapshot)
@@ -157,7 +162,7 @@ class DataManager{
                     }
                     
                 }
-                let data = LockerData.init(lockerType: lockertype, lockerNumber: lockernum, lockerOwner: lockerowner, lockerTimer: lockertimer, lockerNotes: lockernotes)
+                let data = LockerData.init(lockerID: lockerID, lockerType: lockertype, lockerNumber: lockernum, lockerOwner: lockerowner, lockerTimer: lockertimer, lockerNotes: lockernotes)
                 
                 self.dataSpecificLocker.append(data)
             }
@@ -193,7 +198,7 @@ class DataManager{
     func FreeTheLocker(number: Int, completion: @escaping(Bool)->Void){
         
         let ref = Database.database().reference(withPath: "LockerData/\(number)")
-        
+        print("Number ", number)
         let dataUpdateLocker = ["lockerOwner": "",
                                 "lockerTimer": "",
                                 "lockerNotes": ""

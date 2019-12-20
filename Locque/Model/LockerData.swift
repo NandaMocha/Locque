@@ -9,6 +9,7 @@
 import Foundation
 
 struct LockerData {
+    var lockerID: String
     var lockerType: String
     var lockerNumber: String
     var lockerOwner: String

@@ -10,71 +10,23 @@ import UIKit
 import LocalAuthentication
 import CoreLocation
 
+
 class EnterPINVC: UIViewController, CLLocationManagerDelegate {
+    
+    @IBOutlet weak var textfieldPIN: UITextField!
 
     let shared = DataManager.shared
-    let locationManager = CLLocationManager()
-
-    @IBOutlet weak var textfieldPIN: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 1
-        locationManager.delegate = self
-        // 2
-        locationManager.requestAlwaysAuthorization()
-        // 3
-//        loadAllGeotifications()
+        
     }
-    
-//    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-////        mapView.showsUserLocation = (status == .authorizedAlways)
-//    }
-//    
-//    func region(with geotification: Geotification) -> CLCircularRegion {
-//        // 1
-//        let region = CLCircularRegion(center: geotification.coordinate,
-//                                      radius: geotification.radius,
-//                                      identifier: geotification.identifier)
-//        // 2
-//        region.notifyOnEntry = (geotification.eventType == .onEntry)
-//        region.notifyOnExit = !region.notifyOnEntry
-//        return region
-//    }
-//    
-//    func startMonitoring(geotification: Geotification) {
-//        // 1
-//        if !CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
-//            showAlert(withTitle:"Error", message: "Geofencing is not supported on this device!")
-//            return
-//        }
-//        // 2
-//        if CLLocationManager.authorizationStatus() != .authorizedAlways {
-//            let message = """
-//      Your geotification is saved but will only be activated once you grant
-//      Geotify permission to access the device location.
-//      """
-//            showAlert(withTitle:"Warning", message: message)
-//        }
-//        // 3
-//        let fenceRegion = region(with: geotification)
-//        // 4
-//        locationManager.startMonitoring(for: fenceRegion)
-//    }
-
-
-    
-    
-
     
     override func viewWillAppear(_ animated: Bool) {
         print("Enter PIN")
-        if checkGeofencing() == true{
-            if shared.isUsingBiometric == true{
-                checkBiometric()
-            }
-        }else{
-            shared.setAlert(title: "Attention", message: "Make sure you are around the Apple Academy", sender: self) { (done) in}
+        if shared.isUsingBiometric == true{
+            checkBiometric()
+            
         }
         
     }
